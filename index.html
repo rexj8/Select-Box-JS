@@ -56,7 +56,10 @@
 
             let result;
 
-            
+            if(value=='cel'){
+                result=celToFah(numberTemp);
+                document.getElementById('resultContainer').innerHTML= `= ${result} Celcius`
+            }
 
         }
 
