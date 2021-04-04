@@ -54,8 +54,8 @@
             const tempSelected = document.getElementById('temp_diff');
             const value = temp_diff.options[tempSelected.selectedIndex].value;
 
-            const celToFah = () => {
-                let fah = 
+            const celToFah = (cel) => {
+                let fah = cel*9/5 + 32;
             }
 
             let result;
@@ -65,7 +65,7 @@
                 document.getElementById('resultContainer').innerHTML= `= ${result} Celcius`
             }
             else{
-                result=celToFah(numberTemp);
+                result=fahToCel(numberTemp);
                 document.getElementById('resultContainer').innerHTML= `= ${result} Falrenhit`
             }
 
